@@ -11,32 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
-        >
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CSE"/>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ECE"/>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="MECH"/>
-
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/recyclerview"
-        android:layout_below="@+id/tab_id"
         />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager_id"
+        android:layout_below="@id/tab_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
 
 </RelativeLayout>
